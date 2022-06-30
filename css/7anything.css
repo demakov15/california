@@ -1,0 +1,148 @@
+.anything__search {
+	width: 100%;
+	background: 0;
+	border: 1px solid #c5c5c5;
+	border-radius: 100px;
+	display: flex;
+	max-width: 650px;
+	margin: 1rem auto 1.2rem;
+}
+
+.anything__search button {
+	background: none;
+	padding: 0 17px 0 20px;
+}
+
+.anything__form input {
+	width: 100%;
+	background: 0;
+	padding: 21px 0;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 17px;
+}
+
+.anything__form input::placeholder {
+	color: #000000;
+}
+
+[class*="anything__tags-"] {
+	display: flex;
+	gap: 0.5rem;
+	justify-content: center;
+	margin-top: 0.5rem;
+}
+
+.anything__tag {
+	background: #ffffff;
+	border: 1px solid #c5c5c5;
+	border-radius: 200px;
+	padding: 12px 22px 13px;
+	transition: 0.5s;
+	cursor: pointer;
+}
+
+.anything__tag:hover {
+	background: #dce5e242;
+}
+
+.anything__block {
+	max-width: 935px;
+	background: #dce5e2;
+	border-radius: 16px;
+	margin: 4.5rem auto 1.5rem;
+	padding: 3.3rem 0 3rem;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	z-index: 1;
+}
+
+.anything__block .title {
+	margin-top: 0;
+	text-align: center;
+}
+
+.anything__block-text {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 19px;
+	text-align: center;
+}
+
+.anything__block-img {
+	max-width: 233px;
+	align-self: center;
+	margin: 1rem;
+	margin-bottom: 2rem;
+}
+
+.anything__block-form {
+	height: 100%;
+	max-height: 50px;
+
+	display: flex;
+	justify-content: center;
+
+	align-self: center;
+}
+
+.anything__block-form input {
+	border: 1px solid #000000;
+	border-right: none;
+	border-radius: 54px 0px 0px 54px;
+	padding: 16px 0 17px 32px;
+	width: 285px;
+	background: 0;
+	font-size: 14px;
+	line-height: 17px;
+	transition: 0.5s;
+	caret-color: none;
+}
+
+.anything__block-form input::placeholder {
+	color: #000000;
+}
+
+.anything__block-form input:hover,
+.anything__block-form input:active,
+.anything__block-form input:focus {
+	background: rgba(255, 255, 255, 0.534);
+}
+
+.anything__block-butt {
+	background: #000000;
+	color: #fff;
+	border-radius: 0px 200px 200px 0px;
+	padding: 0 33px;
+	transition: 0.5s;
+}
+
+.anything__block-butt:disabled {
+	background: grey;
+	cursor: unset;
+}
+
+.form-err {
+	position: absolute;
+	font-family: "Inter";
+	font-size: 14px;
+	left: 50%;
+	transform: translate(-50%);
+}
+
+.form-err.show {
+	animation: mes 0.5s forwards;
+}
+
+@keyframes mes {
+	0% {
+		top: 78%;
+		opacity: 0;
+	}
+
+	100% {
+		top: 75%;
+		opacity: 1;
+	}
+}

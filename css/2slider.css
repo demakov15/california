@@ -1,0 +1,44 @@
+.slider {
+	margin-top: calc(2rem + 80px);
+}
+
+.slider__flex {
+	background: #dce5e2;
+	border-radius: 32px;
+	display: flex;
+	padding: 0 0 0 4rem;
+}
+
+.slider__left {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.slider__left h1 {
+	font-size: 58px;
+	line-height: 70px;
+	text-align: left;
+}
+
+.slider__left p {
+	font-size: 16px;
+	line-height: 19px;
+	text-align: left;
+	margin: 1.5rem 0 2rem;
+}
+
+.slider__but {
+	font-size: 18px;
+	line-height: 22px;
+	padding: 14px 53px;
+	border: 1px solid #000000;
+	border-radius: 200px;
+	background: none;
+	align-self: flex-start;
+	transition: 0.5s;
+}
+
+.slider__but:hover {
+	background: #c4cac84f
+}

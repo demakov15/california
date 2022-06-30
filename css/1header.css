@@ -1,0 +1,86 @@
+.header {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(255, 255, 255, 0.8);
+	backdrop-filter: blur(10px);
+	z-index: 2;
+}
+
+.header__flex {
+	display: flex;
+	height: 80px;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.header__logo {
+	cursor: pointer;
+}
+
+.header__menu ul {
+	font-family: "Inter";
+	font-size: 14px;
+	line-height: 17px;
+	text-transform: uppercase;
+	display: flex;
+	gap: 2.5rem;
+}
+
+.header__menu a {
+	position: relative;
+	color: black;
+}
+
+/* .header__menu a:hover::before {
+	content: "";
+	width: 100%;
+} */
+
+.header__menu a:visited {
+	color: black;
+}
+
+.header__icons {
+	cursor: pointer;
+}
+
+.header__icons:last-child {
+	margin: 0 21px 0 28px;
+}
+
+:root {
+	scroll-padding-top: 90px;
+	scroll-behavior: smooth;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .header__menu a::before {
+	content: "";
+	position: absolute;
+	width: 0%;
+	transition: 1s;
+	bottom: -10%;
+	left: 0;
+	background-color: black;
+	height: 2px;
+} */

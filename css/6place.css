@@ -1,0 +1,28 @@
+.place {}
+
+.container {}
+
+.title {}
+
+.place__flex {
+	display: flex;
+	gap: 2.5rem;
+}
+
+.place__text p {
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 30px;
+	max-width: 639px;
+	padding: 11px 0 12px;
+}
+
+.place button {
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 29px;
+	background: 0;
+	display: flex;
+	margin: 0 auto;
+	margin-top: 5.2rem;
+}

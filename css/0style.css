@@ -1,0 +1,56 @@
+@import url(./0zero.css);
+@import url(./0dropdown.css);
+@import url(./0modal.css);
+@import url(./1header.css);
+@import url(./2slider.css);
+@import url(./3shop.css);
+@import url(./4seller.css);
+@import url(./5around.css);
+@import url(./6place.css);
+@import url(./7anything.css);
+@import url(8footer.css);
+
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Readex+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap");
+
+body {
+	font-family: "inter";
+}
+
+.container {
+	max-width: 1350px;
+	padding: 0 25px;
+	margin: 0 auto;
+}
+
+.title {
+	font-family: "Readex Pro";
+	font-size: 42px;
+	line-height: 52px;
+	text-align: center;
+	display: block;
+	max-width: 780px;
+	margin: 0 auto;
+	margin-top: 60px;
+	margin-bottom: 10px;
+}
+
+.subtitle {
+	font-family: "Readex Pro";
+	font-size: 14px;
+	line-height: 17px;
+	text-align: center;
+	max-width: 630px;
+	margin: 0 auto;
+	margin-bottom: 40px;
+}
+
+::-webkit-scrollbar {
+	width: 10px;
+	background-color: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: #aec7bd;
+	border-radius: 5px;
+}

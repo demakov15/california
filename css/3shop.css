@@ -1,0 +1,109 @@
+.shop {}
+
+.title {}
+
+.subtitle {}
+
+.grid {
+	display: grid;
+	grid-template-areas:
+		"laptop laptop phones tablet"
+		"laptop laptop phones tablet"
+		"watch watch phones tablet";
+	gap: 1rem;
+}
+
+.grid-item {
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+	cursor: pointer;
+	transition: 0.5s;
+	border-radius: 10px;
+}
+
+.grid-item:hover {
+	box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.grid img {
+	width: 100%;
+}
+
+.class {
+	font-size: 15px;
+	line-height: 19px;
+	text-align: right;
+}
+
+.text {
+	font-family: "Readex Pro";
+	font-size: 32px;
+	line-height: 38px;
+	text-align: right;
+	display: block;
+}
+
+.laptop {
+	grid-area: laptop;
+	padding: 0 42px;
+}
+
+.laptop img {
+	max-width: 500px;
+}
+
+.laptop strong {
+	max-width: 195px;
+	display: block;
+	margin-left: auto;
+}
+
+.watch {
+	grid-area: watch;
+	display: flex;
+	justify-content: space-between;
+	padding: 0 42px;
+	align-items: flex-end;
+}
+
+.watch img {
+	max-width: 270px;
+}
+
+.watch__text {
+	max-width: 180px;
+}
+
+.phones {
+	grid-area: phones;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.phones p {
+	margin-top: 45px;
+}
+
+.phones strong {
+	max-width: 250px;
+	text-align: center;
+}
+
+.tablet {
+	grid-area: tablet;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.tablet p {
+	padding-top: 115px;
+}
+
+.tablet strong {
+	margin-bottom: 42px;
+	max-width: 230px;
+	text-align: center;
+}
