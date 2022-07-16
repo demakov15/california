@@ -1,7 +1,8 @@
-const formEmail = document.querySelector("#form-email");
-const formErr = document.querySelector("#form-err");
 const emailInput = document.querySelector("#email");
 const formButt = document.querySelector(".anything__block-butt");
+const formErr = document.querySelector("#form-err");
+
+formButt.disabled = true;
 formErr.style.color = "red";
 
 let inputResult = "";
@@ -15,21 +16,20 @@ emailInput.addEventListener("input", (e) => {
 		!e.target.value.match(/[^@ \t\r\n]+@[^@ \t\r\n]+\.[^@ \t\r\n]+/)
 	) {
 		formErr.textContent = "Please, enter valid email";
-		formButt.disabled = false;
+		formButt.disabled = true;
 		formErr.classList.add("show");
 	} else {
 		setTimeout(() => {
 			formErr.textContent = "";
+			formButt.disabled = false;
 			formErr.classList.remove("show");
-		}, 1000);
+		}, 200);
 	}
 });
 
-const modal = document.querySelector("#modal");
+const formEmail = document.querySelector("#form-email");
 const blur = document.querySelector(".blur");
-
-const openModal = document.querySelector(".open-button");
-const closeModal = document.querySelector(".close-button");
+const modal = document.querySelector("#modal");
 
 formEmail.addEventListener("submit", (e) => {
 	modal.classList.toggle("show");
@@ -42,5 +42,5 @@ formEmail.addEventListener("submit", (e) => {
 		blur.classList.toggle("show");
 		modal.classList.toggle("show");
 		document.body.style.overflow = "auto";
-	}, 3000);
+	}, 2000);
 });

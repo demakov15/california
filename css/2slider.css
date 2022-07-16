@@ -9,6 +9,10 @@
 	padding: 0 0 0 4rem;
 }
 
+.slider__flex img {
+	max-height: 647px;
+}
+
 .slider__left {
 	display: flex;
 	flex-direction: column;

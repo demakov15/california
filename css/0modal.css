@@ -7,8 +7,9 @@
 
 	position: fixed;
 	z-index: -1;
-	top: 50%;
+	top: 60%;
 	left: 50%;
+	transform: translate(-50%);
 	opacity: 0;
 
 	transition: 1s;
@@ -17,7 +18,8 @@
 .modal.show {
 	opacity: 1;
 	transform: translate(-50%);
-	z-index: 4;
+	top: 40%;
+	z-index: 10001;
 }
 
 .blur {
@@ -25,7 +27,7 @@
 	height: 100vh;
 
 	position: fixed;
-	top: 80px;
+	top: 0px;
 	left: auto;
 	z-index: -1;
 	transition: 1s;
@@ -34,5 +36,5 @@
 .blur.show {
 	background: rgba(255, 255, 255, 0.8);
 	backdrop-filter: blur(3px);
-	z-index: 3;
+	z-index: 10000;
 }
